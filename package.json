@@ -1,0 +1,23 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildStyle": "tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandor99/tailwind-project-2.git"
+  },
+  "keywords": [],
+  "author": "MANDO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mandor99/tailwind-project-2/issues"
+  },
+  "homepage": "https://github.com/Mandor99/tailwind-project-2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
