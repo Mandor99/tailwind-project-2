@@ -3,3 +3,40 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+@layer components {
+    .btn {
+        @apply capitalize rounded-full shadow px-5 py-3
+    }
+    .btn-red {
+        @apply btn bg-my-red-100 text-my-gray-400
+    }
+    .btn-light {
+        @apply btn bg-my-gray-400 text-my-red-100
+    }
+ }
+
+ .nav-menu .nav-menu-top {
+    transform: rotate(45deg) translateY(8px);
+ }
+ .nav-menu .nav-menu-middle {
+    transform: translateX(50px);
+ }
+ .nav-menu .nav-menu-bottom {
+    transform: rotate(-45deg) translateY(-8px);
+ }
+.nav-items {
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    gap: 2rem;
+    border-radius: 0.375rem;
+}

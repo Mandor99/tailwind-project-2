@@ -7,8 +7,99 @@
     <title>PROJECT2 TAILWIND</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h1 class="text-center font-extrabold uppercase">text</h1>
-    <script src=""></script>
+<body class="font-lato min-h-[5000px] bg-[url('/img/bg-tablet-pattern.svg')] bg-no-repeat bg-top-center-sm lg:bg-top-center md:bg-top-center-md bg-[length:800px]">
+    <nav class="mt-8">
+        <div class="container">
+            <div class="content flex justify-between items-center relative">
+                <figure>
+                    <img src="../img/logo.svg" alt="logo">
+                </figure>
+                <ul id='nav_items' class="capitalize hidden shadow-md md:shadow-none md:flex md:flex-row md:gap-5 lg:gap-8 justify-between items-center text-[1rem]">
+                    <li class="cursor-pointer">price</li>
+                    <li class="cursor-pointer">product</li>
+                    <li class="cursor-pointer">about us</li>
+                    <li class="cursor-pointer">career</li>
+                    <li class="cursor-pointer">community</li>
+                </ul>
+                <button class="hidden md:block btn-red hover:btn-light transition duration-500">get started</button>
+                <button id='nav_menu' class="p-2 md:hidden flex flex-col justify-center items-center self-end cursor-pointer overflow-hidden">
+                    <span class="transition-all duration-300 translate-y-0 rotate-0 bg-my-blue-100 w-6 h-[2px] mb-1 nav-menu-top"></span>
+                    <span class="transition-all duration-300 translate-y-0 rotate-0 bg-my-blue-100 w-6 h-[2px] mb-1 nav-menu-middle"></span>
+                    <span class="transition-all duration-300 translate-y-0 rotate-0 bg-my-blue-100 w-6 h-[2px] mb-1 nav-menu-bottom"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="mt-16">
+        <div class="container">
+            <div class="content flex flex-col-reverse md:flex-row justify-between items-center">
+               <div class="w-4/5 md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl mb-6 w-[90%] md:w-[85%] font-bold">Bring everyone together to build better products</h1>
+                <p class="text-my-gray-200 mb-6">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                <button class="btn-red hover:btn-light transition duration-500">get started</button>
+               </div>
+               <figure class="flex-1 w-11/12 md:w-full">
+                <img src="../img/illustration-intro.svg" alt="hero img">
+               </figure>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES -->
+    <section class="mt-16">
+        <div class="container">
+            <div class="content flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="flex-1 text-center md:text-start">
+                    <h2 class="mb-6 text-3xl md:text-4xl max-w-sm font-bold">What's different about Manage?</h2>
+                    <p class="text-my-gray-200 mb-6 max-w-sm">
+                        Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+                    </p>
+                </div>
+               <div class="flex-1 flex flex-col gap-10">
+                <div class="flex flex-col gap-5 flex-1 md:w-[unset] w-full">
+                    <div class="heading flex gap-4 items-baseline bg-my-gray-100 rounded-l-full md:bg-[transparent]">
+                        <span class="btn-red shadow-none py-1 px-4">01</span>
+                        <h4 class="font-bold text-lg">Track company-wide progress</h4>
+                    </div>
+                    <p class="text-my-gray-200 mb-6 max-w-sm md:ml-16">
+                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.
+                    </p>
+                </div>
+                <!-- 2 -->
+                <div class="flex flex-col gap-5 flex-1 md:w-[unset] w-full">
+                    <div class="heading flex gap-4 items-baseline bg-my-gray-100 rounded-l-full md:bg-[transparent]">
+                        <span class="btn-red shadow-none py-1 px-4">02</span>
+                        <h4 class="font-bold text-lg">Advanced built-in reports</h4>
+                    </div>
+                    <p class="text-my-gray-200 mb-6 max-w-sm md:ml-16">
+                        Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="flex flex-col gap-5 flex-1 md:w-[unset] w-full">
+                    <div class="heading flex gap-4 items-baseline bg-my-gray-100 rounded-l-full md:bg-[transparent]">
+                        <span class="btn-red shadow-none py-1 px-4">03</span>
+                        <h4 class="font-bold text-lg">Everything you need in one place
+                        </h4>
+                    </div>
+                    <p class="text-my-gray-200 mb-6 max-w-sm md:ml-16">
+                        Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+
+                    </p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const navMenu = document.getElementById('nav_menu')
+        const navItems = document.getElementById('nav_items')
+        navMenu.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle('nav-menu')
+            navItems.classList.toggle('nav-items')
+        })
+    </script>
 </body>
 </html>
